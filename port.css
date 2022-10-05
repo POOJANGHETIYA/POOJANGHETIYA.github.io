@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    background-color: #010115;
+    color: aliceblue;
+}
+
+.container header {
+    width: 100%;
+    height: 9vh;
+    padding: 10px 60px;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 45px;
+    font-weight: 600;
+    width: 30%;
+    margin-left: 100px;
+}
+
+header nav {
+    width: 70%;
+    display: flex;
+}
+
+header nav ul {
+    justify-content: center;
+    width: 70%;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+    padding: 5px 10px;
+    transition: all 2s ease;
+}
+
+nav ul li a {
+    transition: all 2s ease;
+    font-size: 25px;
+    padding: 10px 5px;
+    font-weight: 500;
+    color: aliceblue;
+    border-color: aqua;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: aqua;
+    scale: 1.6;
+    cursor: pointer;
+}
+
+.container .main {
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+}
+
+.main .main_1 {
+    transition: all 1s ease-in-out;
+    width: 45%;
+    padding: 30px 40px 0px 150px;
+}
+
+.main .main_1 span {
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.main_1 h2 {
+    font-size: 60px;
+}
+
+.main .main_2 {
+    width: 25%;
+}
+
+.main_2 img {
+    width: 100%;
+    justify-self: left;
+    /* box- 255, 0.35) 0px 5px 15px; */
+    background: transparent;
+
+}
+
+.projects {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding: 150px 180px;
+}
+
+.projects h1 {
+    font-size: 50px;
+    line-height: 49px;
+    font-weight: 800;
+}
+
+.projects p {
+    width: 35%;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.projects .button {
+    background-color: #3c00ff;
+    padding: 9px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.projects-div {
+    width: 300px;
+    height: 360px;
+    position: absolute;
+    z-index: 100;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+}
+
+.projects-div:hover {
+    transform: rotate(360deg);
+}
+
+.div-1 {
+
+    top: 100px;
+    left: 800px;
+}
+
+.div-2 {
+    bottom: 10px;
+    right: 1200px;
+}
+
+.div-3 {
+    bottom: 10px;
+    right: 800px;
+}
+
+.div-4 {
+    bottom: 10px;
+    right: 400px;
+}
+
+.projects-div h3 {
+    font-size: 23px;
+    padding: 5px 30px;
+    color: #3c00ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projects-div p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects-div img {
+    width: 100px;
+    margin: 6px 0;
+    border-radius: 50%;
+}
+
+.projects button {
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: 1px solid #3c00ff;
+    padding: 7px 25px;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+    margin-top: 25px;
+    border-radius: 50px;
+}
+
+.projects button:hover {
+    color: #3c00ff;
+    font-weight: 900;
+    background-color: aliceblue;
+}
+
+.skills{
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.skills.active {
+    transform: translateX(0px);
+    opacity: 1;
+    width: 60%;
+    height: 360px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+
+}
+
+.listofLang {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    justify-content: space-around;
+}
+
+li {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 5px;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.skills h3 {
+    color: beige;
+    font-size: 44px;
+    text-align: center;
+    text-decoration: dashed;
+    text-decoration-color: white;
+    text-decoration-line: underline;
+}
+
+
+.profiles{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.profiles.active {
+    transform: translateY(0px);
+    opacity: 1;
+    width: 60%;
+    height: 570px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+
+}
+
+.profiles h3 {
+    color: beige;
+    font-size: 44px;
+    text-align: center;
+    text-decoration: wavy;
+    text-decoration-color: beige;
+    text-decoration-line: underline;
+    padding-top: 10px;
+}
+
+
+.listofprofiles li{
+    padding-top: 25px;
+    color: aliceblue;
+    width: 100%;
+    font-size: 39px;
+    justify-content: space-around;
+}
+
+.listofprofiles a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.listofprofiles a:hover{
+    color: aqua;
+    font-weight: 900;
+}
+
+
+.about {
+    position: flex;
+    margin-top: 10%;
+    width: 100%;
+    height: 400px;
+    padding: 30px 50px;
+    justify-content: center;
+}
+
+.about_1 {
+    width: 55%;
+    padding: 0 60px;
+}
+
+.about_1 h1 {
+    font-size: 50px;
+}
+
+.about_1 p {
+    padding: 10px 0;
+    width: 85%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.about_1 span {
+    font-size: 30px;
+    color: #3c00ff;
+    font-weight: 400;
+}
+
+.about_2 {
+    width: 40%;
+
+}
+
+.about_2 img {
+    width: 300px;
+}
+
+.btns {
+    margin: 15px 0;
+
+}
+
+.btns button {
+    background-color: #3c00ff;
+    border-radius: 50px;
+    color: aliceblue;
+    padding: 8px 17px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+    outline: none;
+    border: none;
+}
+
+.btns button:hover {
+    transform: scale(1.02);
+    color: aqua;
+    cursor: pointer;
+}
+
+
+
+footer {
+    justify-content: center;
+    padding: 10px 70px;
+    background: linear-gradient(#0f03b7, #1100ff, #6303f4, #9803f4);
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+footer p {
+    text-align: center;
+    font-size: 150%;
+    color: aliceblue;
+}
+
+footer .social i {
+    font-size: 25px;
+    margin: 0 3px;
+    cursor: pointer;
+    color: aliceblue;
+
+}
+
+footer .social i:hover {
+    color: aqua;
+}
+
+.media {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.social i:hover {
+    color: azure;
+    scale: 1.3;
+}
